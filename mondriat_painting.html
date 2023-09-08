@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondriat</title>
+    <style>
+        :root{
+            --black-color:#232629;
+            --white-color:#F0F1EC;
+            --red-color:#E72F24;
+            --blue-color:#004592;
+            --yellow-color:#F9D01E;
+            --gray-color:#9f9f9f;
+        }
+        html{
+            min-width: 314px;
+        }
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #F8F0E5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            min-width: 314px;
+        }
+        .container{
+            display: grid;
+            grid-template: 1.2fr 1.2fr 0.8fr 0.8fr 0.8fr 60px/ 40px 1.3fr 1fr 1fr 95px;
+            gap: 9px;
+            height: 80vh;
+            width: 80vh;
+            background-color: var(--black-color);
+            border: 5px solid goldenrod;
+            max-width: 881px;
+            max-height: 881px;
+        }
+        .grid{
+            background-color: var(--white-color);
+        }
+
+        .item1{
+            width: 40px;
+            background-color: var(--black-color);
+            grid-area: 1;
+            
+        }
+        /*--------------------------*/
+        .item2{
+            display: grid;
+            grid-template: 40px 1fr/37% 1fr;
+            gap: 9px;
+            background-color: var(--black-color);
+    
+        }
+        .subitem1{
+            grid-column: span 2;
+            background-color: var(--gray-color);
+        }
+        .subitem2{
+            background-color: var(--red-color);
+        }
+        .subitem3{
+            background-color: var(--white-color);
+        }
+        /*--------------------------*/
+        .item3{
+            display: grid;
+            grid-template: 1fr 35% / 1fr;
+            gap: 9px;
+            background-color: var(--black-color);
+        }
+        .subitem4{
+            background-color: var(--white-color);
+        }
+        .subitem5{
+            background-color: var(--yellow-color);
+        }
+        /*--------------------------*/
+        .item4{
+            display: grid;
+            grid-template: 1fr 35% / 1fr;
+            gap: 9px;
+            background-color: var(--black-color);
+        }
+        .subitem6{
+            background-color: var(--gray-color);
+        }
+        .subitem7{
+            background-color: var(--blue-color);
+        }
+        /*--------------------------*/
+        .item5{
+            background-color: var(--yellow-color);
+        }
+        /*--------------------------*/
+        .item6{
+            grid-row: span 2;
+        }
+        /*--------------------------*/
+        .item7{
+            background-color: var(--blue-color);
+        }
+        /*--------------------------*/
+        .item8{
+            background-color: var(--yellow-color);
+        }
+        .item9{
+            background-color: var(--gray-color);
+        }
+        /*--------------------------*/
+        .item10{
+            grid-row: span 3;
+            display: grid;
+            grid-template: 1fr/ 1fr 1fr ;
+            gap: 9px;
+            background-color: var(--black-color);
+        }
+        .subitem8{
+            background-color: var(--red-color);
+        }
+        .subitem9{
+            background-color: var(--white-color);
+        }
+        /*--------------------------*/
+        .item11{
+            background-color: var(--black-color);
+        }
+        .item13{
+            grid-row: span 2;
+            background-color: var(--black-color);
+        }
+        /*--------------------------*/
+        .item14{
+            grid-row: span 3;
+            grid-column: span 2;
+            display: grid;
+            grid-template: 1fr / 1fr 1fr;
+            gap: 9px;
+            background-color: var(--black-color);
+        }
+        .subitem-container1{
+            display: grid;
+            grid-template: 1fr 40% / 1fr;
+            gap: 9px;
+            background-color: var(--black-color);
+
+        }
+        .subitem-container2{
+            display: grid;
+            grid-template: 1fr 60px / 1fr;
+            gap: 9px;
+            background-color: var(--black-color);
+
+        }
+        .subitem10{
+            background-color: var(--gray-color);
+        }
+        .subitem11{
+            background-color: var(--white-color);
+        }
+        .subitem12{
+            
+            background-color: var(--red-color);
+        }
+        .subitem13{
+            background-color: var(--black-color);
+        }
+
+        
+        
+        .item19{
+            background-color: var(--blue-color);
+        }
+        .item20{
+            background-color: var(--yellow-color);
+        }
+        /*--------------------------*/
+        .item22{
+            background-color: var(--black-color);
+        }
+        .item23{
+            background-color: var(--gray-color);
+        }
+        
+        @media (min-width:421px) and (max-width:700px){
+            .container{
+                width: 400px;
+                height: 400px;
+            }
+        }
+        @media (max-width:420px){
+            .container{
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid item1"></div>
+        <div class="grid item2">
+            <div class="subitem1"></div>
+            <div class="subitem2"></div>
+            <div class="subitem3"></div>
+        </div>
+        <div class="grid item3">
+            <div class="subitem4"></div>
+            <div class="subitem5"></div>
+        </div>
+        <div class="grid item4">
+            <div class="subitem6"></div>
+            <div class="subitem7"></div>
+        </div>
+        <div class="grid item5"></div>
+        <div class="grid item6"></div>
+        <div class="grid item7"></div>
+        <div class="grid item8"></div>
+        <div class="grid item9"></div>
+        <div class="grid item10">
+            <div class="subitem8"></div>
+            <div class="subitem9"></div>
+        </div>
+        <div class="grid item11"></div>
+        <div class="grid item12"></div>
+        <div class="grid item13"></div>
+        <div class="grid item14">
+            <div class="subitem-container1">
+                <div class="subitem10"></div>
+                <div class="subitem11"></div>
+            </div>
+            <div class="subitem-container2">
+                <div class="subitem12"></div>
+                <div class="subitem13"></div>
+            </div>
+        </div>
+        <div class="grid item15"></div>
+        <div class="grid item19"></div>
+        <div class="grid item20"></div>
+        <div class="grid item21"></div>
+        <div class="grid item22"></div>
+        <div class="grid item23"></div>
+        <div class="grid item24"></div>
+        <div class="grid item25"></div>
+    </div>
+    <footer>
+        <p>Composition A - Piet Mondran. Reproduction Made by Carlos Mensias. Only for Educational Purpose</p>
+    </footer>
+</body>
+</html>
