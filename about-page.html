@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Page</title>
+    <style>
+        *{
+            font-family: 'Noto Serif Telugu', serif;
+        }
+        body{
+            background-color: #F8F0E5;
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .main{
+            display: grid;
+            grid-template: 30% 1fr 30%/1fr;
+            gap: 30px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        .card{
+            display: flex;
+            flex-shrink: 1;
+            background-color: #dac0a3cf;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+        }
+        h1{
+            display: block;
+            width: 100%;
+            font-size: 50px;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:ital,wght@1,300&family=Noto+Serif+Telugu:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Info Page</h1>
+    <div class="main">
+        <div class="card process">
+            <h2>¿How this page was made?</h2>
+            <p>This page was entirely created in HTML and Css. The whole process took more than 200 lines of code and almost 2h of coding.</p>
+        </div>
+        <div class="card paintr">
+            <h2>About the Paint</h2>
+            <p>This paint was created by Priet Mondriat in 1923.</p>
+            <p>According to WikiArt.org:</p>
+            <ul>
+                <li>Genre: Abstract</li>
+                <li>Style: Neoplasticism</li>
+                <li>Paint: Oil-Based</li>
+                <li>Location:  Galleria Nazionale d'Arte Moderna e Contemporanea (GNAM), Rome, Italy</li>
+            </ul>
+        </div>
+        <div class="card author">
+            <h2>About Me</h2>
+            <p>I am Carlos Mensias and I have almost 2 years learning Web Development. I started my journey with Python 3 and continued with Js, React.js and more. </p>
+        </div>
+    </div>
+</body>
+</html>
